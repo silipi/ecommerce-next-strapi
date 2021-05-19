@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --background: #f7f7f7;
+  --gray-line: #dcdde0;
+  --text: #1c2230;
+  --text-highlight: #b3b9ff;
+
+  --red: #e83f5b;
+
+  --yellow: #feca57;
+
+  --green-active: #4cd62b;
+  --green: #2fb161;
+
+  --blue: #54a0ff;
+
+  --blue-dark: #4834d4;
+
+  --blue-twitter: #2aa9e0;
+  
+  --purple: #c56cf0;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #303f6d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8d6e5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

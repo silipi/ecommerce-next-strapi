@@ -1,0 +1,61 @@
+.previewContainer {
+  padding: 15px;
+  position: absolute;
+  z-index: 999;
+  top: 90px;
+  right: 20px;
+
+  width: 360px;
+
+  background-color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.previewContainer::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-bottom: 10px solid #ffffff;
+}
+
+.previewContainer > h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.previewContainer > h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.divisor {
+  height: 1px;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.openFullCart {
+  text-align: center;
+}
+
+.openFullCart button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #0984e3;
+  color: #ffffff;
+}

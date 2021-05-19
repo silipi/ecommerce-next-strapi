@@ -1,0 +1,74 @@
+.authenticationFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnContainer button {
+  width: 100%;
+  border: none;
+  height: 45px;
+  background-color: #a29bfe;
+  color: white;
+}
+
+.btnContainer button.active {
+  background-color: #8070fd;
+  color: #ffffff;
+}
+
+.btnContainer button:focus {
+  outline: none;
+}
+
+/* Styles from Box-Border around the form; */
+
+.btnContainer button:not(.active) {
+  line-height: 45px;
+  border-bottom: 3px solid #8070fd;
+}
+
+.iptContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.iptContainer input {
+  width: 65%;
+  padding: 8px 14px;
+  margin-bottom: 25px;
+}
+
+.iptContainer input:first-child {
+  margin-top: 25px;
+}
+
+.authenticationFormContainer > button {
+  width: 50%;
+  padding: 8px 0;
+  margin: auto auto 36px auto;
+  background-color: var(--green);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.authenticationFormContainer > button:hover {
+  filter: brightness(1.05);
+}
+
+.submitError {
+  color: var(--red);
+}

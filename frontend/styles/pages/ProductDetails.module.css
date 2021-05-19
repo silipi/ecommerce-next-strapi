@@ -1,0 +1,134 @@
+.detailsContainer {
+  width: 90vw;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  margin-top: 34px;
+}
+
+.details div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1.2rem;
+}
+
+.details div:nth-child(1) > img {
+  border-radius: 3px;
+}
+
+.image {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  position: relative;
+  height: 380px;
+  width: 380px;
+
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 3rem;
+}
+
+.details div:nth-child(3) h2 {
+  font-weight: 500;
+  width: 24rem;
+  margin-bottom: 20px;
+}
+
+.details div:nth-child(3) h4 {
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.details div:nth-child(3) p:first-of-type {
+  margin-bottom: 8px;
+}
+
+.details div:nth-child(3) p:last-of-type {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 60px;
+}
+
+.details div:nth-child(3) p > input {
+  margin-left: 16px;
+  width: 3rem;
+  padding: 2px 2px 2px 5px;
+  font-family: "Barlow", serif;
+}
+
+.details div:nth-child(3) button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+
+  height: 55px;
+  width: 80%;
+
+  background: var(--green);
+  color: #ffffff;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all ease 100ms;
+}
+
+.details div:nth-child(3) button:hover {
+  filter: brightness(1.05);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.divisor {
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 75%;
+  margin: 50px 0;
+}
+
+.description {
+  text-align: center;
+  width: 80%;
+}
+
+.description p {
+  margin-top: 25px;
+}
+
+@media (max-width: 720px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .details div:nth-child(2) {
+    order: -1;
+  }
+
+  .details div:nth-child(1) {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .details div:nth-child(3) h4 {
+    font-size: 24px;
+  }
+
+  .details div:nth-child(3) p:last-of-type {
+    margin-bottom: 16px;
+  }
+
+  .details div:nth-child(3) > div {
+    display: flex;
+  }
+
+  .image {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,141 @@
+.checkoutContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkoutContainer[disabled] {
+  user-select: none;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.checkoutContainer.emptyCart {
+  text-align: center;
+}
+
+.checkoutContainer.emptyCart h1 {
+  font-weight: 500;
+  margin-top: 5rem;
+}
+
+.checkoutContainer.emptyCart h2 {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.checkoutContainer.emptyCart button {
+  width: 40%;
+  margin: 0 auto;
+
+  background-color: #54a0ff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutContainer.emptyCart button:hover {
+  background: #5fa7ff;
+  border-bottom: 3px solid #1965c2;
+}
+
+.checkoutContainer table {
+  border-collapse: collapse;
+}
+
+.checkoutContainer table thead td {
+  height: 40px;
+  font-weight: 600;
+  border-bottom: thin solid #ddd;
+}
+
+.checkoutContainer table tbody tr td {
+  height: 70px;
+}
+
+.checkoutContainer table tbody tr td:last-child {
+  width: 1%;
+  white-space: nowrap;
+  
+  color: var(--red);
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+
+.checkoutContainer table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.checkoutContainer table tbody tr td:first-child p {
+  margin-left: 15px;
+}
+
+.checkoutContainer h3 {
+  margin: 20px 0;
+}
+
+.cardContainer {
+  width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardContainer > div:first-child {
+  border: 1px solid var(--white);
+  padding: 16px 0 16px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardContainer > button {
+  width: 60%;
+  padding: 5px 0;
+  margin: 16px auto;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardContainer > button:disabled {
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.userNotLogged {
+  text-align: center;
+}
+
+.userNotLogged > p {
+  margin-top: 1rem;
+}
+
+.userNotLogged > button {
+  margin-top: 0.5rem;
+  padding: 8px 0;
+  width: 50%;
+  border: none;
+  background-color: var(--purple);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
